@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="amzn.css">
+</head>
+<body>
+  <div class="login-hero">
+
+    <section>
+    <h1>login</h1>
+    <div class="login-form">
+      <h4>username</h4>
+      <div class="username-input">
+        <i class="fas fa-user"></i>
+        <input type="email" placeholder="type your username" id="username">
+      </div>
+      <h4>password</h4>
+      <div class="password-input">
+        <i class="fas fa-Lock"></i>
+        <input type="password" id="password" placeholder="type your password">
+      </div>
+      <p>Forgot password?</p>
+    </div>
+    <button class="login-btn" onclick="func()">
+      LOGIN
+    </button>
+    <div class="alternative-sign-up">
+      <p>not a member? <span>sign-up</span></p>
+    </div>
+   </section></div>
+
+ <script>
+  function func(){
+    var email = document.getElementById("username").value;
+    var pass = document.getElementById('password').value;
+    if (email == 'rahulvsk2456@gmail.com' && pass == '123456'){
+      alert("success full !")
+      window.location.assign("amzn.html")
+    }
+    else{
+      alert("wrong entry ,invalid")
+    }
+  }
+
+ </script>
+</body>
+</html>
